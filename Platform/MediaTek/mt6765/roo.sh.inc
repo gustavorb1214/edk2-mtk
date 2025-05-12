@@ -11,7 +11,7 @@ function platform_build_bootimg(){
                 --cmdline "bootopt=64S3,32N2,64N2" \
                 --base 0x40078000 \
                 --ramdisk "Platform/MediaTek/mt6765/dummyramdisk" \
-                --dtb "Platform/MediaTek/mt6765/FdtBlob_compat/${DEVICE}.dtb" \
+                --dtb "Platform/MediaTek/mt6765/FdtBlob_compat/dandelion.dtb" \
                 --kernel "${WORKSPACE}/uefi-${DEVICE}-kernel.gz" \
                 -o "${WORKSPACE}/boot.img" \
                 ||return "$?"
